@@ -1,0 +1,24 @@
+{
+  
+  "name": "eselite-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "handlebars": "^4.7.7",
+    "node": "^16.10.0",
+    "node-fetch": "^3.0.0",
+    "nodemailer": "^6.6.5",
+    "nodemon": "^2.0.13"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}
