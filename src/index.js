@@ -8,11 +8,16 @@ const nodemailer = require('nodemailer')
 const app = express()
 app.use(express.json());
 
+
+// Define paths for Express config
+const publicDirectoryPath = path.join(__dirname, '../public')
+const viewsPath = path.join(__dirname, '../views')
+
 app.engine("handlebars", exphbs({ defaultLayout: false }));
 app.set("view engine", "handlebars");
-app.set("views", "views");
+app.set("views", viewsPath);
 
-app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use('/public',express.static(publicDirectoryPath));
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 
